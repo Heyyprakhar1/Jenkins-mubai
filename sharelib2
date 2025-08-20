@@ -1,0 +1,13 @@
+@Library('sharedlib1') _
+pipeline {
+    agent any
+    stages{
+        stage('subtraction of two digits') {
+            steps {
+                script {
+                    hello.subtraction (20 , 10)
+                }
+            }
+        }
+    }
+}
