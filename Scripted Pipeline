@@ -1,0 +1,17 @@
+node('built-in') {
+    stage('continous Download') {
+        echo 'continous Download'
+    }
+    stage('continous build') {
+        echo 'continous Build'
+    }
+    stage('continous Deployement') {
+        echo 'continous Deployement'
+    }
+    stage('continous Testing') {
+        echo 'continous Testing'
+    }
+    stage('continous Release') {
+        echo 'continous release'
+    }
+}
