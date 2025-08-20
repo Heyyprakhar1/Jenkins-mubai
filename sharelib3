@@ -1,0 +1,20 @@
+@Library('sharedlib1') _
+pipeline{
+    agent any
+    stages{
+        stage('Division of two numbers') {
+            steps{
+                script {
+                    hello.division(20 , 4)
+                }
+            }
+        }
+        stage('Product of two numbers') {
+            steps{
+                script {
+                    hello.product(17 , 3)
+                }
+            }
+        }
+    }
+}
